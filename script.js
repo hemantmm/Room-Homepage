@@ -1,6 +1,6 @@
 const nextImg = document.querySelector('.next')
 const prevImg = document.querySelector('.prev')
-const Slide = document.querySelectorAll('.Slide')
+const Slide = document.querySelectorAll('.slide')
 
 let index=0;
 show(index);
@@ -17,7 +17,7 @@ function nextSlide(){
     if(index>Slide.length-1){
         index=0;
     }
-    display(index);
+    show(index);
 }
 
 function previousSlide(){
@@ -25,14 +25,9 @@ function previousSlide(){
     if(index<0){
         index=Slide.length-1;
     }
-    display(index);
+    show(index);
 }
 
 nextImg.addEventListener('click',nextSlide);
 prevImg.addEventListener('click',previousSlide);
 
-
-// theButton.onclick = function pictureChange(){
-//     document.getElementById('bottom2').src="images/desktop-image-hero-3.jpg";
-//     console.log('clicked');
-// }
