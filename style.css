@@ -363,3 +363,12 @@ li:hover,li.active{
   }
 
 }
+
+
+.attribution
+{
+  position: absolute;
+  bottom: 0%;
+  left: 30%;
+  font-size: larger;
+}
