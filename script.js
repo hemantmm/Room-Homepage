@@ -31,3 +31,17 @@ function previousSlide(){
 nextImg.addEventListener('click',nextSlide);
 prevImg.addEventListener('click',previousSlide);
 
+
+const burger = document.getElementById('burger');
+const navUL = document.getElementById('nav-ul');
+const logoImg = document.getElementById('logo-img');
+
+burger.addEventListener('click',()=>
+{
+    navUL.classList.toggle('show');
+})
+
+logoImg.addEventListener('click',()=>
+{
+    navUL.classList.toggle('hide');
+})
